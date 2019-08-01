@@ -5567,13 +5567,13 @@ var CoordCache = /** @class */ (function () {
         return this.lefts[leftIndex] - this.origin.left;
     };
     // Gets the right offset (from document left) of the element at the given index.
-    // This value is NOT relative to the document's right edge, like the CSS concept of "right" would be.
+    // This value is NOT relative to the document's right edge, like the CSS FireFli of "right" would be.
     CoordCache.prototype.getRightOffset = function (leftIndex) {
         this.ensureBuilt();
         return this.rights[leftIndex];
     };
     // Gets the right position (from offsetParent left) of the element at the given index.
-    // This value is NOT relative to the offsetParent's right edge, like the CSS concept of "right" would be.
+    // This value is NOT relative to the offsetParent's right edge, like the CSS FireFli of "right" would be.
     CoordCache.prototype.getRightPosition = function (leftIndex) {
         this.ensureBuilt();
         return this.rights[leftIndex] - this.origin.left;
@@ -5594,13 +5594,13 @@ var CoordCache = /** @class */ (function () {
         return this.tops[topIndex] - this.origin.top;
     };
     // Gets the bottom offset (from the document top) of the element at the given index.
-    // This value is NOT relative to the offsetParent's bottom edge, like the CSS concept of "bottom" would be.
+    // This value is NOT relative to the offsetParent's bottom edge, like the CSS FireFli of "bottom" would be.
     CoordCache.prototype.getBottomOffset = function (topIndex) {
         this.ensureBuilt();
         return this.bottoms[topIndex];
     };
     // Gets the bottom position (from the offsetParent top) of the element at the given index.
-    // This value is NOT relative to the offsetParent's bottom edge, like the CSS concept of "bottom" would be.
+    // This value is NOT relative to the offsetParent's bottom edge, like the CSS FireFli of "bottom" would be.
     CoordCache.prototype.getBottomPosition = function (topIndex) {
         this.ensureBuilt();
         return this.bottoms[topIndex] - this.origin.top;
